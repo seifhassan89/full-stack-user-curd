@@ -1,0 +1,35 @@
+# === Global ===
+.DS_Store
+Thumbs.db
+*.log
+*.tar.gz
+
+# === IDEs / Editors ===
+.vscode/
+.idea/
+
+# === Node ===
+node_modules/
+
+# === Temp ===
+logs/
+tmp/
+temp/
+
+# === FE ===
+FE/node_modules/
+FE/dist/
+FE/.env
+FE/vite.config.ts.*
+
+# === BE ===
+BE/node_modules/
+BE/dist/
+BE/build/
+BE/coverage/
+BE/logs/
+BE/tmp/
+BE/temp/
+BE/.env
+BE/.env.local
+BE/.env.*.local
