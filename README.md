@@ -58,7 +58,8 @@ cd <your-project-folder>
 ### 2. Setup Environment Files
 
 ```bash
-cp .env.example .env
+cp BE/.env.example BE/.env
+cp FE/.env.example FE/.env
 ```
 
 > Edit `.env` values as needed for your local dev environment.
@@ -69,8 +70,8 @@ cp .env.example .env
 
 ```bash
 cd BE
-pnpm install
-pnpm run start:dev
+npm install
+npm run docker:up
 ```
 
 - Backend API: `http://localhost:5000`
@@ -82,8 +83,8 @@ pnpm run start:dev
 
 ```bash
 cd ../FE
-pnpm install
-pnpm run dev
+npm install
+npm run dev
 ```
 
 - Admin Panel: `http://localhost:3000`
@@ -143,8 +144,8 @@ VITE_API_BASE_URL=http://localhost:5000
 
 ```bash
 cd BE
-pnpm run docker:build
-pnpm run docker:up
+npm run docker:build
+npm run docker:up
 ```
 
 > Docker Compose sets up MongoDB + Nest API
